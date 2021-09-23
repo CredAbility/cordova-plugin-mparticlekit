@@ -1,0 +1,19 @@
+{
+  "name": "cordova-plugin-mparticlekit",
+  "version": "0.1.0",
+  "description": "Cordova plugin to add the mparticle kit to cordova app",
+  "cordova": {
+    "id": "cordova-plugin-mparticlekit",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-ios",
+    "cordova-android"
+  ],
+  "author": "Karthik Vasan",
+  "license": "ISC"
+}
