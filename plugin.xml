@@ -1,24 +1,48 @@
 <?xml version='1.0' encoding='utf-8'?>
 <plugin id="cordova-plugin-mparticlekit" version="0.1.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
     <name>cordova-plugin-mparticlekit</name>
-    <clobbers target="cordova.plugins.mparticlekit" /></js-module>
+    <clobbers target="cordova.plugins.mparticlekit" />
     <platform name="ios">
         <config-file parent="/*" target="config.xml">
             <feature name="MParticleKitPlugin">
                 <param name="ios-package" value="com.cordova.plugin.mparticlekit" />
             </feature>
         </config-file>
+        <!-- 
+        <podspec>
+            <config>
+                <source url="https://cdn.cocoapods.org/"/>
+            </config>
+            <pods>
+                <pod name="mParticle-Iterable" spec="~> 8.1.0" />
+            </pods>
+        </podspec>
+        -->
+        
     </platform>
     <platform name="android">
+
         <config-file parent="/*" target="res/xml/config.xml">
             <feature name="MParticleKitPlugin">
                 <param name="android-package" value="com.cordova.plugin.mparticlekit" />
             </feature>
         </config-file>
-        <config-file parent="/*" target="AndroidManifest.xml">
+        <config-file target="AndroidManifest.xml" parent="/*/application">           
+            <!--  
+            <receiver android:name="com.mparticle.MPReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+                <intent-filter>
+                    <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                    <category android:name="uk.co.credabilityapptest" />
+                </intent-filter>
+            </receiver>
+            <service android:name="com.mparticle.MPService" />
+            
+            
+            <service android:name="com.mparticle.messaging.InstanceIdService" />
+            -->
         </config-file>
 
-        <framework custom="true" src="src/android/plugin.gradle" type="gradleReference" />
+        <framework custom="true" src="src/android/build.gradle" type="gradleReference" />
 
     </platform>
 </plugin>
