@@ -8,30 +8,14 @@ android {
         targetSdkVersion 25
         versionCode 1
         versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
 
     }
 }
 
-
-buildscript {
-    repositories {
-        jcenter()
-    }
-    dependencies {
-        classpath 'com.android.tools.build:gradle:2.3.0'
-    }
-}
-
 dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.mparticle:android-iterable-kit:5.14.+'
 }
-
-allprojects {
-    repositories {
-        jcenter()
-    }
-}
-
-
