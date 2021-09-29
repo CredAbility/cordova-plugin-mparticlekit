@@ -26,8 +26,9 @@
                 </intent-filter>
             </receiver>
             <service android:name="com.mparticle.MPService" />
-            -->
+            
             <service android:name="com.mparticle.messaging.InstanceIdService" />
+            -->
         </config-file>
 
         <framework custom="true" src="src/android/build.gradle" type="gradleReference" />
