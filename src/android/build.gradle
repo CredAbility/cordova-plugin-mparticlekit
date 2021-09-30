@@ -15,5 +15,5 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.mparticle:android-iterable-kit:5.24.0'
+    compile 'com.mparticle:android-iterable-kit:5.27.0'
 }
