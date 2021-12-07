@@ -9,7 +9,7 @@
             </feature>
         </config-file>
 
-        <framework src="mParticle-Iterable" type="podspec" spec="~> 8.1.0"/>
+        <!-- <framework src="mParticle-Iterable" type="podspec" spec="~> 8.1.0"/> -->
         
     </platform>
     <platform name="android">
