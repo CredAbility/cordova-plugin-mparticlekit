@@ -8,6 +8,7 @@
                 <param name="ios-package" value="com.cordova.plugin.mparticlekit" />
             </feature>
         </config-file>
+        <!-- 
         <podspec>
             <config>
                 <source url="https://cdn.cocoapods.org/"/>
@@ -16,6 +17,7 @@
                 <pod name="mParticle-Iterable" spec="~> 8.1.0" />
             </pods>
         </podspec>
+        -->
         
     </platform>
     <platform name="android">
