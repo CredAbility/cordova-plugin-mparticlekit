@@ -8,16 +8,15 @@
                 <param name="ios-package" value="com.cordova.plugin.mparticlekit" />
             </feature>
         </config-file>
-        <!-- 
+
         <podspec>
             <config>
                 <source url="https://cdn.cocoapods.org/"/>
             </config>
             <pods>
-                <pod name="mParticle-Iterable" spec="~> 8.1.0" />
+                <pod name="mParticle-AppsFlyer" spec="~> 8.0" />
             </pods>
         </podspec>
-        -->
         
     </platform>
     <platform name="android">
@@ -28,20 +27,7 @@
             </feature>
         </config-file>
         <config-file target="AndroidManifest.xml" parent="/*/application">           
-            <!--  
-            <receiver android:name="com.mparticle.MPReceiver" android:permission="com.google.android.c2dm.permission.SEND">
-                <intent-filter>
-                    <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-                    <category android:name="uk.co.credabilityapptest" />
-                </intent-filter>
-            </receiver>
-            <service android:name="com.mparticle.MPService" />
-            
-            
-            <service android:name="com.mparticle.messaging.InstanceIdService" />
-            -->
         </config-file>
-
         <framework custom="true" src="src/android/build.gradle" type="gradleReference" />
 
     </platform>
