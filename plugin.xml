@@ -14,7 +14,7 @@
                 <source url="https://cdn.cocoapods.org/"/>
             </config>
             <pods>
-                <pod name="mParticle-AppsFlyer" spec="8.2.1" />
+                <pod name="mParticle-AppsFlyer" spec="~> 8.0" />
             </pods>
         </podspec>
         
