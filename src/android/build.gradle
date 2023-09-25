@@ -11,6 +11,6 @@ android {
 }
 
 dependencies {
-    implementation 'com.mparticle:android-appsflyer-kit:5+'
+    implementation 'com.mparticle:android-iterable-kit:5+'
     implementation "com.android.installreferrer:installreferrer:2.2"
 }
